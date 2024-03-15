@@ -1,0 +1,59 @@
+@import '../../assets/globalStyle.css';
+
+.loginPage {
+  width: 100%;
+  height: 100%;
+  background: var(--transparent-bg);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: context-menu;
+}
+
+.loginPage .login-container{
+    min-width: 30vw;
+    min-height: 40vh;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:'Times New Roman', Times, serif ;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.login-container p:first-child{
+    margin: 20px 0px!important;
+}
+
+.login-container .userName, .submit-btn{
+    min-width: 10vw;
+    min-height: 4.5vh;
+    padding: 0.8% 2%;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+
+.login-container .userName{
+    font-weight: 600;
+    color: var(--text);
+    border: 3px solid var(--light-grey);
+}
+
+.login-container input:focus{
+    outline-style: none;
+    border: 3px solid  var(--light-blue)!important;
+}
+
+.login-container .submit-btn{
+    width: 10.5vw;
+    color: var(--white);
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    background: var(--active-text);
+    border: 0px !important;
+}
